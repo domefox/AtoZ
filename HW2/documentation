@@ -1,0 +1,7 @@
+Week 2 HW
+https://github.com/Programming-from-A-to-Z/A2Z-F24/tree/main/02-regex#readme
+
+The Flesch Index is a "reading level" score for a passage in English. Here is a p5 sketch that calculates the Flesch Index for a body of text. How could this be improved / changed with regular expressions?
+Sketch reference above: https://editor.p5js.org/a2zitp/sketches/OQx3A3Sa0
+
+I adjusted the above sketch using regular expressions
