@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+  <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+  <h1>Flesch Index Calculator</h1>
+
+  <p>This page demonstrates a simple text analysis scenario: computing the <a href="http://en.wikipedia.org/wiki/Flesch-Kincaid_Readability_Test">Flesch Index</a> (aka Flesch-Kincaid Reading Ease test), a numeric score that indicates the readability of a text. The lower the score, the more difficult the text. The higher, the easier. For example, texts with a score of 90-100 are, say, around the 5th grade level, wheras 0-30 would be for &#8220;college graduates&#8221;.</p>
+
+  <p>The Flesch Index is computed as a function of total words, total sentences, and total syllables. It was developed by Dr. Rudolf Flesch and modified by J. P. Kincaid (thus the joint name). The formula is as follows:</p>
+
+  <p>
+    $$Flesch Index = 206.835 - 1.015 \times (words \div sentences) + 84.6 \times (syllables \div words)$$
+  </p>
+  <p>
+    <button id="sample">use text sample</button>
+
+  </p>
+
+  <p>
+  <div id="drop_zone">drag a file</div>
+  <p>
+    <textarea id="textinput" rows="10" cols="100">Enter some text</textarea><br />
+    <button id="submit">submit</button>
+  </p>
+
+  <p><button id="clearButton">clear all text</button></p>
+  <script src="sketch.js"></script>
+  <script src="flesch.js"></script>
+</body>
+
+</html>
